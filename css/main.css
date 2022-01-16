@@ -1,0 +1,49 @@
+main {
+    background-color:#ffffff;
+    padding: 1em;
+}
+
+header {
+  background-color:black;
+  padding: 10px;
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  display: grid;
+  grid-auto-flow: column;
+
+}
+
+body {
+    background-color:white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  footer {
+    background-color:#666;
+    padding: 30px;
+    text-align: center;
+    color: black;
+  }
+  
+  #content {
+    max-width: 960px;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: 10%;
+      }
+
+      #currentdate { color:white;
+
+      }
+
+      ul li {
+        
+        margin: 5px;
+        padding: 5px;
+      }
