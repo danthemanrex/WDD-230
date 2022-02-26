@@ -1,0 +1,7 @@
+@media screen and (min-width: 32.5em) {
+    html {
+        display: grid;
+        grid-template-columns: 2;
+        grid-gap: 1em;
+    }
+}
