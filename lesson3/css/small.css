@@ -55,10 +55,10 @@ footer p a:hover {
 .backgroundWhite {
 	background-color: #ffffff;
 }
-.backgroundYellow {
+.backgroundteal {
 	background-color: #f2be54;
 }
-.backgroundGrey {
+.backgroundteal2 {
 	background-color: #cacfd4;
 }
 .backgroundDarkBlue {
@@ -138,7 +138,7 @@ footer p a:hover {
 }
 /* navigation area - top */
 nav {
-	background-color: #f2be54;	
+	background-color: #0A8BA1;	
 	text-align: center;
 }
 nav ul {
