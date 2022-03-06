@@ -1,169 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
-	font-family: 'Roboto',sans-serif;
+	font-family: 'Roboto', Arial, sans-serif;
 }
-header, footer, main, nav {
+footer, main {
 	max-width: 80em;
 	margin: 0 auto;
 }
-header, footer {
+header, nav {
+	margin: 0 auto;
+}
+/* heading */
+header {
 	background-color: #153e5c;
-	color: #ffffff;
-	padding: 15px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	text-align: center;
-	flex-direction: column;
 }
-main {
-	padding: 15px;
-}
-section p, section img {
-	padding-left: 15px;
-} 
-img {
-	max-width: 100%;
+header img {
+	width: 80px;
 	height:	auto;
 }
-li {
-	list-style-type: none;
-}
-h1 {
-	font-size: 30px;
-}
-h2 {
-	font-size: 20px;
-}
-h3 {
-	font-size: 16px;
-}
-h4 {
-	text-decoration: underline;
-	font-size: 16px;
-}
-a {
-	text-decoration: none;
-}
-footer p a {
-	color: #ffffff;
-}
-footer p a:hover {
-	color:  #87aeb4;
-}
-/* background colors */
-.backgroundWhite {
-	background-color: #ffffff;
-}
-.backgroundteal {
-	background-color: #0A8BA1;
-}
-.backgroundteal2 {
-	background-color: #09C1C5;
-}
-.backgroundDarkBlue {
-	background-color: #153e5c;
-}
-.backgroundBlack {
-	background-color: #000000;
-}
-/* text colors */
-.textWhite {
-	color: #ffffff;
-}
-.textYellow {
-	color: #f2be54;
-}
-.textGrey {
-	color: #cacfd4;
-}
-.textDarkBlue {
-	color: #153e5c;
-}
-.textBlack {
-	color: #000000;
-}
-/* tezt sizes */
-.size16 {
-	font-size: 16px;
-}
-.size20 {
-	font-size: 20px;
-}
-.size25 {
-	font-size: 25px;
-}
-.size30 {
-	font-size: 30px;
-}
-.size40 {
-	font-size: 40px;
-}
-/* color-scheme table settings */
-#colorTable {
-	border-collapse: collapse;
-	margin: 15px;
-}
-#colorTable tr {
-	height: 300px;
-}
-#colorTable tr td {
-	text-align: center;
-	vertical-align: bottom;
-	width: 250px;
-	padding: 15px;
-}
-#colorTable tr td:nth-child(1), 
-#colorTable tr td:nth-child(5) {
-	display: none;
-}
-/*typography table settings */
-#typographyTable {
-	border-collapse: collapse;
-	margin: 15px;
-	font-size: 10px;
-}
-#typographyTable tr td, #typographyTable tr th {
-	border:1px solid #000000;
-	padding: 5px;
-	width: 250px;
-}
-#typographyTable tr td:nth-child(2), 
-#typographyTable tr th:nth-child(2),
-#typographyTable tr td:nth-child(4), 
-#typographyTable tr th:nth-child(4),
-#typographyTable tr td:nth-child(5), 
-#typographyTable tr th:nth-child(5) {
-	display: none;
-}
-/* navigation area - top */
-nav {
-	background-color: #0A8BA1;	
-	text-align: center;
-}
-nav ul {
+.headings {
 	display: flex;
-	margin: 0;
-	padding: 0;
-	justify-content: center;
 	flex-direction: column;
+	margin-left: 10px;
 }
-nav ul li {
-	padding: 15px;
-	flex: 1 1 auto; /* nav buttons span full width*/
+.headings h1 {
+	font-size: 20px;
+	color: #ffffff;
+	margin: 0;
 }
-nav ul li a {
-	padding: 15px;
-	font-size: 16px;
+.moto {
+	color: #f2be54;
+	font-style: italic;
+	font-size: 12px;
+}
+/*header navigation */
+nav {
+	background-color: #f2be54;
+}
+.navigation {
+	max-width: 80em;
+	list-style: none;
+	background-color: #f2be54;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	font-size: 16px;	
 	color: #000000;
+	text-decoration: none;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.responsive li {
+	display: block;
 }
 nav a:hover {
+	background-color: #153e5c;
 	color: #ffffff;
 }
 .active {
 	background-color: #cacfd4;
-	height: 23px;
+	border-left: 4px solid #153e5c;
+	border-right: 4px solid #153e5c;
 }
-.active a:hover {
-	color: #000000;
+/* temp main divs */
+main {
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+}
+main div {
+	border: dotted 1px #153e5c;
+	background-color: #cacfd4;
+	margin: 15px;
+	padding: 15px;
+}
+/* footer */
+footer {
+	background-color: #f2be54;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+footer p {
+	font-size: 14px;
+}
+/* typography */
+h1 {
+	font-size: 20px;
+	color: #153e5c;
+}
+h2 {
+	font-size: 16px;
+	color: #153e5c;
+}
+h3 {
+	font-size: 14px;
+	color: #153e5c;
+}
+p {
+	font-size: 12px;
 }
