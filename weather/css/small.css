@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
-	font-family: 'Roboto', Arial, sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 footer, main {
 	max-width: 80em;
@@ -31,18 +31,18 @@ header img {
 	margin: 0;
 }
 .moto {
-	color: #f2be54;
+	color: #153e5c;
 	font-style: italic;
 	font-size: 12px;
 }
 /*header navigation */
 nav {
-	background-color: #f2be54;
+	background-color: #0A8BA1;
 }
 .navigation {
 	max-width: 80em;
 	list-style: none;
-	background-color: #f2be54;
+	background-color: #0A8BA1;
 	margin: 0 auto;
 	padding: 0;
 	text-align: center;
@@ -87,7 +87,7 @@ main div {
 }
 /* footer */
 footer {
-	background-color: #f2be54;
+	background-color: #153e5c;
 	display: flex;
 	align-items: center;
 	justify-content: center;
