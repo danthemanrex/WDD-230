@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an assignment page for the Preston site page of week 3 in WDD 230.">
+    <title>WDD 230 &bull; Week 3 &bull; Preston Town Page</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <div id="prestonPancakes">
+        <p>Saturday = Preston Pancakes in the Park!
+        <br>9:00 a.m. Saturday at the city park pavilion.</p> 
+    </div>
+    <header>
+            <img src="images/weatherlogo.jpg" alt="Logo for the weather site">
+            <section class="headings">
+                <h1>SW Idaho Weather</h1>
+                <div class="moto">All weather, all the time.</div>
+            </section>        
+    </header>  
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">☰ Menu</a></li>
+            <li><a href="./">Home</a></li>
+            <li class="active"><a href="weather2/preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <div id="heroArea">
+            <img src="images/heropic.jpg" alt="image of preston Idaho">
+            <section id="weatherSummary">
+                <h3>Weather Summary</h3>
+                <label>Currently:</label> <p>Overcast</p>
+                <label>High:</label> <p>22&deg;C</p>
+                <label>Wind Chill:</label><p>&deg;C</p>
+                <label>Humidity:</label> <p>69%</p>
+                <label>Wind Speed:</label> <p>5 kph</p>
+            </section>
+        </div>
+        <div id="forcastArea">
+            <h3>Five Day Forecast</h3>
+            <div id="forcastFive">
+                <div class="forcastCol">
+                    <p class="forcastDay">Mon</p>
+                    <img src="images/tempsun.png" alt="picture of a sun">
+                    <p class="forcastTemp">15&deg;C</p>
+                </div>
+                <div class="forcastCol">
+                    <p class="forcastDay">Tues</p>
+                    <img src="images/tempsun.png" alt="picture of a sun">
+                    <p class="forcastTemp">15&deg;C</p>
+                </div>
+                <div class="forcastCol">
+                    <p class="forcastDay">Wed</p>
+                    <img src="images/tempsun.png" alt="picture of a sun">
+                    <p class="forcastTemp">15&deg;C</p>
+                </div>
+                <div class="forcastCol">
+                    <p class="forcastDay">Thurs</p>
+                    <img src="images/tempsun.png" alt="picture of a sun">
+                    <p class="forcastTemp">15&deg;C</p>
+                </div>
+                <div class="forcastCol">
+                    <p class="forcastDay">Fri</p>
+                    <img src="images/tempsun.png" alt="picture of a sun">
+                    <p class="forcastTemp">15&deg;C</p>
+                </div>
+            </div>
+        </div>
+        <div id="articleArea">
+            <h3>Article Title</h3>
+            <img src="images/articlephoto.jpg" alt="picture our shy subject of article!">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor magna eget est lorem. Euismod lacinia at quis risus sed. Elit eget gravida cum sociis. Urna nunc id cursus metus aliquam eleifend. Eget magna fermentum iaculis eu non diam phasellus vestibulum. Mollis nunc sed id semper risus in hendrerit. Turpis egestas maecenas pharetra convallis posuere. Velit ut tortor pretium viverra suspendisse potenti nullam ac tortor. Tortor dignissim convallis aenean et tortor at. Vitae et leo duis ut diam quam nulla. Eu volutpat odio facilisis mauris sit amet massa. Non tellus orci ac auctor augue mauris augue neque. Et malesuada fames ac turpis.</p>
+            <p>Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Vestibulum rhoncus est pellentesque elit. Tellus elementum sagittis vitae et leo duis ut diam. Orci nulla pellentesque dignissim enim sit amet venenatis urna cursus. Tempor orci dapibus ultrices in iaculis nunc. Tristique et egestas quis ipsum suspendisse ultrices. Aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Rutrum tellus pellentesque eu tincidunt tortor. Eget magna fermentum iaculis eu non. Placerat in egestas erat imperdiet sed. Interdum consectetur libero id faucibus nisl tincidunt eget nullam non. Eu lobortis elementum nibh tellus molestie nunc. Vitae nunc sed velit dignissim sodales ut.</p>
+        </div>
+
+    </main>
+    <footer>
+        <div id="contactArea">
+            <img id="mapImg" src="images/prestonminimap.jpg" alt="image of preston map">
+            <section id="contactTextArea">
+                <h3>Contact Information</h3>
+                <p>30 N 1st E<br>Preston, ID 83263</p>
+                <br>
+                <p>(555) 555-5555<br> contact@swidwx.net</p>
+                <div>
+                    <a href="https://facebook.com/"><img class="socialIcon" src="images/facebook.png" alt="facebook icon">&ensp;</a>
+                    <a href="https://twitter.com/"><img class="socialIcon" src="images/twitter.png" alt="twitter icon"></a>
+                </div>
+                
+            </section>
+        </div>   
+        <div id="footerBar">
+            <p>&copy;SW Idaho Weather &bull; Attributions &bull; Daniel Harris
+            <br><span id="output"></span></p>
+        </div> 
+    </footer>
+    <script src="js/preston.js"></script>
+</body>
+</html>
