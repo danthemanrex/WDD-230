@@ -50,18 +50,18 @@ header img {
 	margin: 0;
 }
 .moto {
-	color: #f2be54;
+	color: #153e5c;
 	font-style: italic;
 	font-size: 12px;
 }
 /*header navigation */
 nav {
-	background-color: #f2be54;
+	background-color: #0A8BA1;
 }
 .navigation {
 	max-width: 80em;
 	list-style: none;
-	background-color: #f2be54;
+	background-color: #0A8BA1;
 	margin: 0 auto;
 	padding: 0;
 	text-align: center;
@@ -195,7 +195,7 @@ footer p {
 #contactArea {
 	display: grid;
 	grid-template-columns: 1fr 1fr;	
-	background-color: #f2be54;
+	background-color: #153e5c;
 	padding: 15px;
 	grid-gap: 75px;
 	align-items: center;
@@ -228,7 +228,7 @@ footer p {
 /* preston page alert */
 #prestonPancakes {
 	display: none;
-	background: #f2be54;
+	background: #153e5c;
 	padding: 15px;
 	text-align: center;
 }
