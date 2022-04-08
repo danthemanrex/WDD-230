@@ -13,10 +13,6 @@
     <link rel="stylesheet" href="css/large.css">
 </head>
 <body>
-    <div id="prestonPancakes">
-        <p>Saturday = Preston Pancakes in the Park!
-        <br>9:00 a.m. Saturday at the city park pavilion.</p> 
-    </div>
     <header>
             <img src="images/sunny.png" alt="Logo for the weather site">
             <section class="headings">
@@ -35,20 +31,21 @@
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
+    </nav>
     <main>
-        <h2>Preston Idaho</h2>
+        <h2>Soda Springs Idaho</h2>
         <div id="heroArea">
-            <img src="images/heropicpreston.jpg" alt="image of the town of preston Idaho" sizes="100vw"
-            srcset="images/heropicprestonsm.jpg 400w,
-                    images/heropicprestonmed.jpg 800w,
-                    images/heropicpreston.jpg 1280w">
+            <img src="images/heropicfish.jpg" alt="image of the town of fishhaven Idaho" sizes="100vw"
+            srcset="images/heropicfish.jpg 400w,
+                    images/heropicfish.jpg 800w,
+                    images/heropicfish.jpg 1280w">
             <section id="weatherSummary">
                 <h3>Weather Summary</h3>
-                <label>Currently:</label> <p><span id="desPreston"></span></p>
-                <label>Temperature:</label> <p><span id="temperaturePreston"></span>&deg;F</p>
+                <label>Currently:</label> <p><span id="desSoda"></span></p>
+                <label>Temperature:</label> <p><span id="temperatureSoda"></span>&deg;F</p>
                 <label>Wind Chill:</label><p><span id="windChill"></span></p>
-                <label>Humidity:</label> <p><span id="humidityPreston"></span>%</p>
-                <label>Wind Speed:</label> <p><span id="windSpeedPreston"></span> mph</p>
+                <label>Humidity:</label> <p><span id="humiditySoda"></span>%</p>
+                <label>Wind Speed:</label> <p><span id="windSpeedSoda"></span> mph</p>
             </section>
         </div>
         <div id="forcastArea">
@@ -82,22 +79,19 @@
             </div>
         </div>
         <div class="eventBorder">
-            <div class="eventArea"><h3>Upcoming Town Events</h3><span id="eventPreston"></span></div>
+            <div class="eventArea"><h3>Upcoming Town Events</h3><span id="eventFish"></span></div>
         </div>
         <div id="articleArea">
-            <h3>A message from the Mayor</h3>
-            <img src="images/articlephotopreston.jpg" alt="picture our shy subject of article!">
-            <p>Preston is an agricultural community located on the north end of the pristine Cache Valley touting views that are unique to new visitors to this Valley. Cache Valley is also known as “Bridgerland”, which was discovered and explored by the famous American mountain man Jim Bridger 200 years ago.</p>
-            <p>All throughout the year, Preston serves as an essential hub to the most rewarding family outdoor activities found in the Intermountain west. These activities include: snowmobiling in Strawberry Canyon and feeding the family at numerous local fast food restaurants before driving 15 minutes to the only ski resort in Cache Valley. Summer activities include riding ATV’s on over 500 miles of designated roads as well as fishing and/or waterskiing and boasting on over a dozen lakes and reservoirs in the immediate area. Numerous streams and rivers allow for big game or upland bird hunting, trails and designated campgrounds provide ideal and picturesque camping opportunities into the Cache and Caribou National Forests. Preston is geographically situated near the Bear River and is the only drainage in SE Idaho and Northern Utah where whitewater activities are available.</p>
-            <p>We are excited to proclaim that Preston remains a Home to common sense Hometown values and hardworking independent citizens.</p>
-            <p>Preston is a wonderful place to visit and an absolutely Great place to call Home!</p>
-            <p>Dan Keller, Mayor </p>
+            <h3>Fish Haven Idaho</h3>
+            <img src="images/articlephotofish.jpg" alt="picture our shy subject of article!">
+            <p>Soda Springs has a rich history starting when the Pioneers headed west for California and Oregon. Due to the abundance of springs and water in the area, Soda Springs became known as the "Oregon Trail Oasis." The famous Steam Boat Springs and Hooper Springs, which was originally called "Beer Springs,"  were some of the main sites to be seen by the earlier settlers and travelers as well as the many sulfurous springs that many pioneers journaled about the smell coming from the them. The City later became further famous in 1937 when a well was being drilled in search of hot water for a bath house that unleashed what is known as the Geyser, which is the only captive Geyser in the world.</p>
+            <p>From Wikipedia</p>
         </div>
 
     </main>
     <footer>
         <div id="contactArea">
-            <img id="mapImg" src="images/prestonminimap.jpg" alt="image of clouds" loading="lazy">
+            <img id="mapImg" src="images/fishminimap.jpg" alt="image of fishhaven" loading="lazy">
             <section id="contactTextArea">
                 <h3>Contact Information</h3>
                 <p>Preston, ID 83263</p>
@@ -113,10 +107,10 @@
             <br><span id="output"></span></p>
         </div> 
     </footer>
-    <script src="js/preston.js"></script>
-    <script src="js/weathersumpreston.js"></script>
-    <script src="js/forecastpreston.js"></script>
-    <script src="js/eventpreston.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/forecastfish.js"></script>
+    <script src="js/weathersumfish.js"></script>
+    <script src="js/eventfish.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>WebFont.load({google: {families: ["Roboto"]}});</script>
 </body>
