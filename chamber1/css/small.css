@@ -92,7 +92,7 @@ footer {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	color: var(--default-light);
+	color: #ffffff;
 }
 footer p {
 	font-size: 14px;
