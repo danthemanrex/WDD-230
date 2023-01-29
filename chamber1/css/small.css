@@ -97,6 +97,14 @@ footer {
 footer p {
 	font-size: 14px;
 }
+.footer-container {
+    width: 100%;
+}
+
+.base-footer {
+    width: 100%;
+    text-align: center;
+}
 /* typography */
 h1 {
 	font-size: 20px;
@@ -112,4 +120,8 @@ h3 {
 }
 p {
 	font-size: 12px;
+}
+.llogobottom {
+    width: 50px; /* or any other value in pixels */
+    height: 50px; /* or any other value in pixels */
 }
