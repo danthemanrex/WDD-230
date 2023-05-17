@@ -7,7 +7,7 @@ const x = document.getElementById('hamburguerBtn');
 
 x.onclick = toggleMenu;
 
-
+document.querySelector('#©').textContent = new Date().getFullYear();
 
 const opciones = 
 { weekday: 'long', 
