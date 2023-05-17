@@ -1,4 +1,13 @@
-document.querySelector('©').textContent = new Date(Date.now()).getFullYear();
+function toggleMenu() {
+    document.getElementById('primaryNav').classList.toggle('open');
+    document.getElementById('hamburguerBtn').classList.toggle('open');
+}
+
+const x = document.getElementById('hamburguerBtn');
+
+x.onclick = toggleMenu;
+
+
 
 const opciones = 
 { weekday: 'long', 
@@ -21,11 +30,3 @@ new Date(Date.now()).toLocaleString('en-US',opciones2);
 
 
 
-function toggleMenu() {
-    document.getElementById('primaryNav').classList.toggle('open');
-    document.getElementById('hamburguerBtn').classList.toggle('open');
-}
-
-const x = document.getElementById('hamburguerBtn');
-
-x.onclick = toggleMenu;
