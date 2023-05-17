@@ -1,4 +1,4 @@
-document.querySelector('#Â©').textContent = new Date(Date.now()).getFullYear();
+document.querySelector('©').textContent = new Date(Date.now()).getFullYear();
 
 const opciones = 
 { weekday: 'long', 
