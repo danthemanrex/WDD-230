@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an assignment page for the weather site home page of week 6 in WDD 230.">
+    <title>WDD 230 &bull; Week 6 &bull; Home Page</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <img src="images/sunny.png" alt="Logo for the weather site">
+        <section class="headings">
+            <h1>SW Idaho Weather</h1>
+            <div class="moto">All weather, all the time.</div>
+        </section>        
+</header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">☰ Menu</a></li>
+            <li class="active"><a href="./">Home</a></li>
+            <li><a href="preston-9.html">Preston</a></li>
+            <li><a href="sodasprings-9.html">Soda Springs</a></li>
+            <li><a href="fishhaven-9.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-9.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Idaho Town Information</h2>
+        <div id="heroArea">
+            <img src="images/heropichome.jpg" alt="image of weather change in idaho" sizes="100vw"
+            srcset="images/heropichomesm.jpg 400w,
+                    images/heropichomemed.jpg 800w,
+                    images/heropichome.jpg 1280w">
+        </div>
+        <div id="allTownInfo">
+            <article>
+                <figure class="townInfoImg">
+                    <img src="images/homedatapreston.jpg" alt="park road in preston" loading="lazy">
+                </figure>
+                <div class="homeDataPreston"></div>
+            </article>
+            <article>
+                <figure class="townInfoImg">
+                    <img src="images/homedatasoda.jpg" alt="park road in soda springs" loading="lazy">
+                </figure>
+                <div class="homeDataSodaSprings"></div>
+            </article>
+            <article>
+                <figure class="townInfoImg">
+                    <img src="images/homedatafish.jpg" alt="park road in fish haven" loading="lazy">
+                </figure>
+                <div class="homeDataFishhaven"></div>
+            </article>
+        </div>
+        <div id="articleArea">
+            <h3>Article Title</h3>
+            <figure class="articleImg">
+                <img src="images/articlephotohome.jpg" alt="picture our shy subject of article!" loading="lazy">
+            </figure>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium animi vitae aliquid sit laborum, a asperiores repellendus sapiente et nulla fuga provident voluptate quis reprehenderit porro cum dolores cupiditate? Velit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium animi vitae aliquid sit laborum, a asperiores repellendus sapiente et nulla fuga provident voluptate quis reprehenderit porro cum dolores cupiditate? Velit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium animi vitae aliquid sit laborum, a asperiores repellendus sapiente et nulla fuga provident voluptate quis reprehenderit porro cum dolores cupiditate? Velit!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium animi vitae aliquid sit laborum, a asperiores repellendus sapiente et nulla fuga provident voluptate quis reprehenderit porro cum dolores cupiditate? Velit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium animi vitae aliquid sit laborum, a asperiores repellendus sapiente et nulla fuga provident voluptate quis reprehenderit porro cum dolores cupiditate? Velit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium animi vitae aliquid sit laborum, a asperiores repellendus sapiente et nulla fuga provident voluptate quis reprehenderit porro cum dolores cupiditate? Velit!</p>
+        </div>
+    </main>
+    <footer>
+        <div id="contactArea">
+            <img id="mapImg" src="images/prestonminimap.jpg" alt="image of preston map">
+            <section id="contactTextArea">
+                <h3>Contact Information</h3>
+                <p>30 N 1st E<br>Preston, ID 83263</p>
+                <br>
+                <p>(555) 555-5555<br> contact@swidwx.net</p>
+                <div>
+                    <a href="https://facebook.com/"><img class="socialIcon" src="images/facebook.png" alt="facebook icon">&ensp;</a>
+                    <a href="https://twitter.com/"><img class="socialIcon" src="images/twitter.png" alt="twitter icon"></a>
+                </div>
+                
+            </section>
+        </div>   
+        <div id="footerBar">
+            <p>&copy;SE Idaho Weather &bull; Attributions &bull; Daniel Harris
+            <p><a href="../">Assignment Portal</a></p>
+            <br><span id="output"></span></p>
+        </div> 
+    </footer>
+    <script src="js/home.js"></script>
+    <script src="js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>WebFont.load({google: {families: ["Roboto"]}});</script>
+</body>
+</html>
