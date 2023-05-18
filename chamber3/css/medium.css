@@ -4,19 +4,16 @@
 
 @media (min-width: 37.5em) {
 	
-	
-	aside {
+	sidemenu {
 		display: flex;
 		flex-direction: row;
 	}
-
-	aside div {
+	sidemenu div {
 		width: 100%;
 		margin: 10px;
 	}
 
 	main div {
-		min-height: 150px;
 		height: 100%;
 	}
 
@@ -41,6 +38,11 @@
 		grid-row: 3/4;
 	}
 	
+	aside div {
+		width: 100%;
+		margin: 10px;
+
+	}
 	.join {
 		grid-column: 1/4;
 		grid-row: 4/5;
@@ -100,4 +102,23 @@
 	.hide-small {
 		display: inline-block;
 	}
+
+	.call-to-action {
+		right: 15px;
+		bottom:25px;
+	}
+
+	.join-us {
+		width: 100%;
+		margin-top: 20px;
+		padding: 12px;
+		background-color: #18c6f1;
+		border-radius: 5px;
+		border: none;
+	}
+	
+	.join-us:hover{
+		background-color: #c5b205;
+	}
+
 }
