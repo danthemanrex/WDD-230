@@ -29,4 +29,9 @@ document.querySelector('#datetime').textContent =
 new Date(Date.now()).toLocaleString('en-US',opciones2);
 
 
+  const banner = document.getElementById("banner");
+  const today = new Date().getDay();
+  if (today === 1 || today === 2) {
+    banner.style.display = "block";
+  }
 
