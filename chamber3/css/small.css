@@ -20,6 +20,12 @@ h1, h2, h3, h4 {
     font-family: 'Playfair Display', serif;
 }
 
+/*----Top-page banner----*/
+#top-page-banner {
+    text-align: center;
+    padding: 10px;
+    background-color: #FCA311;
+}
 header {
 	background-color: #004369;
 	display: grid;
