@@ -248,18 +248,6 @@ span {
     min-height: 100%;
 }
 
-.join-us {
-    width: 100%;
-    margin-top: 20px;
-    padding: 12px;
-    background-color: #18c6f1;
-    border-radius: 5px;
-    border: none;
-}
-
-.join-us:hover{
-    background-color: #ff7d00;
-}
 .call-to-action {
     position: absolute;
     bottom: 8px;
@@ -273,7 +261,7 @@ span {
 }
 
 .call-to-action:hover {
-    background-color: #ff7d00;
+    background-color: #c50505;
 }
 
 .text-join {
@@ -290,30 +278,14 @@ span {
     margin: 0 auto;
 }
 
-#temp {
+#temperature {
     text-align: right;
-    font-size: 30px;
-    right: 10px;
-} 
+    font-size: 36px;
+    right: 15px;
+}
 
 .contact a {
     font-size: 20px;
-}
-
-.weather-div {
-    display: inline;
-}
-
-.weather p {
-    position: relative;
-    padding-left: 0;
-    margin-left: 0;
-    padding-bottom: 0.5px;
-}
-
-.weather-div picture img {
-    width: 90px;
-    position: absolute;
 }
 
 main figure.myphoto img {width: 100%;}
