@@ -1,16 +1,18 @@
 /***********************************************/
-/** Media Queries for larger views *************/
+/** Media Queries for Medium views *************/
 /***********************************************/
 
 @media (min-width: 37.5em) {
 	
-	sidemenu {
+	aside {
 		display: flex;
 		flex-direction: row;
 	}
-	sidemenu div {
+
+	aside div {
 		width: 100%;
 		margin: 10px;
+
 	}
 
 	main div {
@@ -30,33 +32,29 @@
 
 	.news {
 		grid-column: 1/4;
-		grid-row: 2/3;
+		grid-row: 3/4;
 	}
 
 	aside {
 		grid-column: 1/4;
-		grid-row: 3/4;
+		grid-row: 4/5;
 	}
 	
-	aside div {
-		width: 100%;
-		margin: 10px;
 
-	}
 	.join {
 		grid-column: 1/4;
-		grid-row: 4/5;
+		grid-row: 5/6;
 		display: block;
 	}
 
 	.event {
 		grid-column: 1/3;
-		grid-row: 5/6;
+		grid-row: 2/3;
 	}
 
-	.weater {
+	.weather {
 		grid-column: 3/4;
-		grid-row: 5/6;
+		grid-row: 2/3;
 	}
 
 	footer {
@@ -108,6 +106,11 @@
 		bottom:25px;
 	}
 
+	.joinbutton {
+		grid-column: 1/4;
+		grid-row: 4/5;
+	}
+
 	.join-us {
 		width: 100%;
 		margin-top: 20px;
@@ -118,7 +121,6 @@
 	}
 	
 	.join-us:hover{
-		background-color: #c50505;
+		background-color: #ff7d00;
 	}
-
 }
