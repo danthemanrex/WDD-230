@@ -15,15 +15,17 @@ year: 'numeric',
 month: 'numeric', 
 day: 'numeric' };
 
-document.querySelector('#dateMod').textContent = 
-new Date(Date.now()).toLocaleString();
-
 const opciones2 = 
 { weekday: 'long', 
 year: 'numeric', 
 month: 'long', 
 day: 'numeric' };
 
+
+var datetimeElement = document.querySelector('#datetime');
+if (datetimeElement !== null) {
+  datetimeElement.textContent = new Date(Date.now()).toLocaleString('en-US',opciones2);
+}
 
 document.querySelector('#datetime').textContent = 
 new Date(Date.now()).toLocaleString('en-US',opciones2);
