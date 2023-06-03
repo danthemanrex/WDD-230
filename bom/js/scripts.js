@@ -1,25 +1,34 @@
+const input = document.querySelector('#favchap');
+const button = document.querySelector('#myButton');
+const list = document.querySelector('.list');
 
-const list = document.querySelector('ul');
-const input = document.querySelector('input');
-const button = document.querySelector('button');
+button.onclick = function(){
+    let nameChapter = input.value;
 
-button.onclick = function() {
-  let myItem = input.value;
-  input.value = '';
+    if (nameChapter.trim() == ''){      // if the text is empty print an alert
+        alert('Input field is empty');
+        return true
+    }
+    
+    input.innerHTML= ''; 
+    
+    let li = document.createElement('li');
+    let span = document.createElement('span');
+    span.textContent = nameChapter;
+    let buttonli = document.createElement('button');
+    buttonli.textContent = '❌'
 
-  const listItem = document.createElement('li');
-  const listText = document.createElement('span');
-  const listBtn = document.createElement('button');
+    li.appendChild(span);
+    li.appendChild(buttonli);
+    list.appendChild(li);
 
-  listItem.appendChild(listText);
-  listText.textContent = myItem;
-  listItem.appendChild(listBtn);
-  listBtn.textContent = 'âŒ';
-  list.appendChild(listItem);
+    buttonli.addEventListener('click', function(){ 
+        li.remove();
+    });
 
-  listBtn.onclick = function(e) {
-    list.removeChild(listItem);
-  }
-
-  input.focus();
 }
+
+button.addEventListener('click', function() {
+    input.focus(); // focus the text selector into the input
+    input.value = ''; // eliminate the text after added
+})
