@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+
+
 .colored {
     background-color: white;
     color: #f4f7f5;
@@ -18,12 +20,6 @@ body {
 
 h1, h2, h3, h4 {
     font-family: 'Playfair Display', serif;
-}
-/*----Top-page banner----*/
-#top-page-banner {
-    text-align: center;
-    padding: 10px;
-    background-color: #FCA311;
 }
 
 header {
@@ -90,6 +86,12 @@ h1 {
 h2 {
 	padding: .5rem;
 	color: black;
+
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 0px;
 }
 
 p {
@@ -97,6 +99,13 @@ p {
 }
 h1, p {
     margin: 0 2vw;
+}
+
+header,
+footer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 10px;
 }
 
 header div button, a {
@@ -141,20 +150,20 @@ header div nav ul li a {
     padding: .8rem 2vw;
     text-decoration: none;
 	color: #f4f7f5;
-    border-top: 1px solid rgb(39, 49, 185); ;
+    border-top: 1px solid rgb(46, 120, 139); ;
     font-size: 0.8rem;
     margin: 0;
     text-align: center;
 }
 
 header div nav ul li.active a {
-    background-color: #017b9a;
-    color: white;
+    background-color: #ff7d00;
+    color: black;
 }
 
 header div nav ul li a:hover {
-    background-color: #017b9a;
-    color: white;
+    background-color: #ff7d00;
+    color: black;
 }
 
 header div nav ul {
@@ -189,7 +198,7 @@ footer {
 	display: flex;
 	padding: 1rem;
 	justify-content:space-between;
-font-weight: 700; 
+    font-weight: 700; 
     margin-top: 1rem;
 }
 
@@ -202,7 +211,7 @@ li {
 }
 
 aside {
-    background-color: #004369;
+    background-color: #7E7F9A;
     padding: 10px;
 }
 
@@ -226,7 +235,6 @@ footer p {
     text-align: center;
 }
 
-
 .date-header {
     text-align: center;
 }
@@ -247,9 +255,19 @@ span {
     position: relative;
     margin: 0;
     width: 100%;
-    min-height: 100%;
+    height: auto;
 }
 
+.herodiscover {
+    position: relative;
+    padding: 0; 
+}
+.bannerdiscover {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
 .join-us {
     width: 100%;
     margin-top: 20px;
@@ -306,10 +324,9 @@ span {
     display: inline;
 }
 
-.weather p {
+.weather-div {
     position: relative;
     padding-left: 0;
-    margin-left: 0;
     padding-bottom: 0.5px;
 }
 
@@ -323,12 +340,12 @@ main figure.myphoto figcaption {text-align: center; font-size: .75rem;}
 
 main picture.optipic img {width: 100%;}
 
-
 picture.optipic {
     display: block;
     width: 96%;
-    margin: 0 2%;
+    margin: 0 3%;
 }
+
 figure{
     margin: 0 auto;
 }
