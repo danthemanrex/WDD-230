@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Table Build</title>
+        <meta name="description" content="WDD 230">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/table.css">
+    </head>
+<body>
+
+    <header>
+        <h1>Table Build</h1>
+    </header>
+    
+    <main>
+
+        <table>
+            <caption>Table 1: Account Feature Comparison</caption>
+            <thead>
+                <tr>
+                    <th colspan="4" scope="colgroup">ACME Wildwest Services</th>
+                </tr>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Basic</th>
+                    <th scope="col">Premium</th>
+                    <th scope="col">Deluxe</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Feature 1</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                </tr>
+                <tr>
+                    <td>Feature 2</td>
+                    <td>❌</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                </tr>
+                <tr>
+                    <td>Feature 3</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>✅</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy;<span id="classYear"></span> &bull; Dan Harris &bull; PDX, Oregon &bull; <a href="https://codepen.io/danthemanrex/pen/OJwbmKW">Codepen.io</a>
+        <br><span id="output"></span></p>
+    </footer>
+    <script src="js/lastModifiedDate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>WebFont.load({google: {families: ["Roboto"]}});</script>
+</body>
+</html>
