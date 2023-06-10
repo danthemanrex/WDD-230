@@ -157,13 +157,13 @@ header div nav ul li a {
 }
 
 header div nav ul li.active a {
-    background-color: #ff7d00;
+    background-color: #017b9a;
     color: black;
 }
 
 header div nav ul li a:hover {
-    background-color: #ff7d00;
-    color: black;
+    background-color: #017b9a;
+    color: white;
 }
 
 header div nav ul {
