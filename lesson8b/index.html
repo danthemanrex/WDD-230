@@ -48,6 +48,54 @@
 <!-- CONTENT HERE -->
 <main>
     <h1>Course Proposal Application</h1>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                
+                <legend>Applicant Information</legend>
+                    <label class="top">First Name*<input type="text" name="fname" required></label>
+                    <label class="top">Last Name*<input type="text" name="lname" required></label>
+                    <label class="top">Phone Number <input type="tel" name="PHONE" placeholder="1235555555"></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="something@somewhere.com" required></label>
+                    <label class="top">Website <input type="url" name="url" placeholder="http://"></label>
+                
+
+            </fieldset>
+            <fieldset>
+                <legend>Course Information</legend>
+                <div>Audience</div>
+                <label><input type="radio" name="Audience" value="beginner"> Beginner </label>
+                <label><input type="radio" name="Audience" value="intermediate"> Intermediate </label>
+                <label><input type="radio" name="Audience" value="advanced"> Advanced </label>
+
+                <div>Software Needed</div>
+                <label class="sbs"><input type="checkbox" name="editing" value="Yes"> Photo editing </label>
+                <label class="sbs"><input type="checkbox" name="code" value="Yes"> Coding </label>
+                <label class="sbs"><input type="checkbox" name="process" value="Yes"> Preprocessor </label>
+                <label class="sbs"><input type="checkbox" name="client" value="Yes"> FTP Client </label>
+            </fieldset>
+            <fieldset>
+                <legend>Funding</legend>
+                <label class="top">Anticipitated Completion Date <input type="date" name="completedDate"></label>
+                <label class="top">Course Subject
+                    <select name="subject">
+                        <option value="">Select a Subject &#9662;</option>
+                        <option value="software">Software Dev</option>
+                        <option value="creative">Creative Professional</option>
+                        <option value="info">Info Tech</option>
+                        <option value="data">Data Professional</option>
+                        <option value="construction">Construction</option>
+                        <option value="manufacturing">Manufacturing</option>
+                        <option value="business">Business Professional</option>
+                        <option value="security">CyberSecurity</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+                <label class="top">How Many Authors <input type="number" name="authors"></label>
+            </fieldset>
+            
+            <input type="submit" value="Propose My Course" class="submitBtn">
+
+        </form>
         
 
           
@@ -56,7 +104,7 @@
     
 <!-- FOOTER HERE -->   
     <footer>
-        &copy; 2018 &bull; Paul Cheney &bull; 123-555-6789
+        &copy; 2023 &bull; Daniel Harris &bull; 123-555-6789
     </footer>
 <script src="js/scripts.js"></script>
 </body>
