@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+
+:root {
+    /* Chosen colors */
+    --primary:#14213D;
+    --secondary:#1192fc;
+    --accent1:#000000;
+    --accent2:#E5E5E5;
+
+    /* Chosen fonts */
+    --heading-font: Open Sans, Arial, sans-serif;
+    --paragraph-font: Montserrat, Helvetica, sans-serif;
+
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--accent2);
+    font-family: var(--paragraph-font);
+    height: 100%;
+}
+
+header {
+    background-color: var(--primary);
+    text-align: center;
+    padding: 0.75rem;
+}
+
+div.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+div.cards section {
+    margin: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--secondary);
+    box-shadow: 5px 5px 10px #6f7364;
+    transition: transform 0.2s;
+    align-items: center;
+}
+
+section:hover {
+    transform: scale(1.05);
+}
+
+img {
+    margin: 2rem;
+    max-width: 90%;
+    box-shadow: 5px 5px 10px #6f7364;
+    object-fit: cover;
+}
+
+h1 {
+    text-shadow:3px 3px 3px var(--accent1);
+    font-family: var(--heading-font);
+    color: var(--accent2);
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+p {
+    text-align: center;
+    margin: 1rem;
+}
+
+footer {
+    background-color: var(--secondary);
+    text-align: center;
+    padding: 0.75rem;
+}
