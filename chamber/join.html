@@ -46,129 +46,56 @@
         
               
     </header>
-    <main>
+    
         <div class="herojoin">
                 <img class="bannerjoin" src="./images/bridge.jpeg" alt="bridge">
                 <h1>Join Our Chamber</h1>
                 <form method="get" action="thanks.html">
+                   
                     <fieldset>
-                        
-                        <legend>Applicant Information</legend>
-                            <label class="top">First Name*<input type="text" name="fname" required></label>
-                            <label class="top">Last Name*<input type="text" name="lname" required></label>
-                            <label class="top">Phone Number <input type="tel" name="PHONE" placeholder="1235555555"></label>
-                            <label class="top">Email* <input type="email" name="email" placeholder="something@somewhere.com" required></label>
-                            <label class="top">Website <input type="url" name="url" placeholder="http://"></label>
-                            <label class="top">Business Name <input type="text" name="bname" placeholder="contoso corp"></label>
-                        
-        
-                    </fieldset>
-                    <fieldset>
-                        <legend>Business Information</legend>
-                        <div>Audience</div>
-                        <label><input type="radio" name="Audience" value="consumer"> Consumer </label>
-                        <label><input type="radio" name="Audience" value="B2B"> B2B </label>
-                        <label><input type="radio" name="Audience" value="other"> Other </label>
-        
-                        <div>Help Needed</div>
-                        <label class="sbs"><input type="checkbox" name="editing" value="Yes"> Photo editing </label>
-                        <label class="sbs"><input type="checkbox" name="code" value="Yes"> Coding </label>
-                        <label class="sbs"><input type="checkbox" name="process" value="Yes"> Advertising </label>
-                        <label class="sbs"><input type="checkbox" name="client" value="Yes"> Other Marketing </label>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Other Business Info</legend>
-                        <label class="top">Anticipitated Join Date <input type="date" name="completedDate"></label>
-                        <label class="top">Business Sector
-                            <select name="subject">
-                                <option value="">Select a Sector &#9662;</option>
-                                <option value="software">Software Dev</option>
-                                <option value="creative">Creative Professional</option>
-                                <option value="info">Info Tech</option>
-                                <option value="data">Data Professional</option>
-                                <option value="construction">Construction</option>
-                                <option value="manufacturing">Manufacturing</option>
-                                <option value="business">Business Professional</option>
-                                <option value="security">CyberSecurity</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </label>
-                        <label class="top">How Many Employees? <input type="number" name="authors"></label>
-                    </fieldset>
+                        <legend>Enter Contact Information</legend>
+                        <p><i>Fields with red border are required.</i></p>
+                        <label class="top">First Name: <input type="text" name="fname" required></label>
+                        <label class="top">Last Name: <input type="text" name="lname" required></label>
+                        <label class="top">Business Position: <input type="text" name="position" pattern="[a-zA-Z0-9- ]{1,7}" id="businessPosition"></label>
+                        <label class="top">Email <input type="email" name="email" placeholder="something@somewhere.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></label>
+                        <label class="top">Cellphone #: <input type="tel" name="phone" required></label>
+                        <label class="top">Business  Name: <input type="text" name="businessName" required></label>
+                        <label class="top">Business  Description: <textarea placeholder="Type here" name="description"></textarea></label>
                     
-                    <input type="submit" value="Execute" class="submitBtn">
+                    
+                        <fieldset>
+                            <legend>Choose Membership</legend>
+                            <label class="sbs"><input type="radio" name="membership" value="nonprofit"> NON-PROFIT | Free</label>
+                            <p>Unique to non-profits, expand your organizations reach by joining the Tri Cities Chamber 
+                                to gain access to many of the valley's other top community-focused businesses.</p>
+                            <label class="sbs"><input type="radio" name="membership" value="bronze"> BRONZE | $300</label>
+                            <p>Get Established! Bronze memberships are recommended for businesses with 1-2 employees 
+                                and are intended for startups and new businesses. Bronze membership is a great stepping 
+                                stone to business success. Join to begin building name recognition and rapport with other 
+                                business leaders in the community.</p>
+                            <label class="sbs"><input type="radio" name="membership" value="silver"> SILVER | $600</label>
+                            <p>Marketing & Networking! Silver Memberships are recommended for businesses with 2-5 
+                                employees and are for established businesses looking to grow. This level is ideal 
+                                for a business wanting to gain exposure and build community awareness. Silver membership 
+                                offers all of the benefits of the Bronze level, plus additional marketing tools and benefits. 
+                                Silver membership includes 4 Luncheon tickets.</p>
+                            <label class="sbs"><input type="radio" name="membership" value="gold"> GOLD | $1,000</label>
+                            <P>Business Development - Gold memberships are for established businesses working to become 
+                                leaders in the Flathead Valley. Increase visibility - this level includes additional marketing 
+                                opportunities. Gold membership includes 8 Luncheon tickets.</P>
+                        </fieldset>
+                        
+                                        
+                    <input type="submit" value="Join Us!" class="submitBtn">
         
                 </form>
                
         </div>
 
-           <div class="event">
-                <b>Lorem ipsum?</b><br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque habitant morbi tristique senectus et netus et malesuada. Urna nunc id cursus metus aliquam eleifend mi in nulla. Non curabitur gravida arcu ac tortor. 
-                Orci a scelerisque purus semper eget. Diam vel quam elementum pulvinar etiam non quam. A cras semper auctor neque vitae tempus quam pellentesque nec. Egestas sed tempus urna et pharetra pharetra massa massa ultricies. Fermentum iaculis eu non diam phasellus vestibulum. Sed id semper risus in hendrerit gravida. 
-                
-                
-                <br><br>Aliquam ultrices sagittis orci a scelerisque purus semper. Odio facilisis mauris sit amet massa vitae tortor condimentum lacinia. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. 
-                Dis parturient montes nascetur ridiculus mus mauris vitae ultricies leo. Enim blandit volutpat maecenas volutpat blandit aliquam etiam erat velit. Odio ut sem nulla pharetra. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Pellentesque habitant morbi tristique senectus et netus et. 
-                Interdum velit euismod in pellentesque massa placerat duis ultricies lacus. Aliquam sem et tortor consequat id. Nullam non nisi est sit amet. 
-                Nisl vel pretium lectus quam id leo in vitae turpis. Accumsan tortor posuere ac ut consequat. Et pharetra pharetra massa massa ultricies mi quis hendrerit dolor.. 
-                
-               
-                
-                <br><br>Vivamus arcu felis bibendum ut tristique et egestas quis ipsum. Lobortis mattis aliquam faucibus purus in massa tempor nec feugiat. 
-                Malesuada nunc vel risus commodo viverra maecenas accumsan lacus. Ipsum suspendisse ultrices gravida dictum. Proin sed libero enim sed faucibus. 
-                <br><br>Viverra aliquet eget sit amet tellus cras adipiscing enim. Consequat nisl vel pretium lectus. 
-                Eu mi bibendum neque egestas congue quisque egestas diam. Ac tortor vitae purus faucibus. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Vitae tortor condimentum lacinia quis vel eros donec ac.<br>
-                <br>Feugiat pretium nibh ipsum consequat nisl vel pretium lectus quam. Fermentum odio eu feugiat pretium nibh. Quis auctor elit sed vulputate mi sit amet mauris.<br>
-                <br>Pretium fusce id velit ut tortor pretium viverra suspendisse. Pellentesque id nibh tortor id aliquet lectus proin. Libero enim sed faucibus turpis in eu. 
-                elit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Neque aliquam vestibulum morbi blandit cursus risus at ultrices. Urna neque viverra justo nec ultrices dui.. 
-                <br><br>Arcu non sodales neque sodales. Est placerat in egestas erat imperdiet sed euismod nisi. In ante metus dictum at tempor commodo ullamcorper. Euismod quis viverra nibh cras.<br><br><hr><br>
-                <b>Languages</b><br>Eget arcu dictum varius duis at consectetur. Elit at imperdiet dui accumsan sit amet nulla. Odio ut enim blandit volutpat maecenas volutpat blandit aliquam. Sed cras ornare arcu dui vivamus arcu felis bibendum.<br><br>
-                <hr> 
-                <button class="localstorage"><h2>Local Storage</button><br>
-                	<p class="left"></p><span class="label">Number of Visits: </span><span class="visits"></span></p>
-                    <p class="left"></p><b>Page Timestamp: <span class="today"></span> (Days)</b></p>
-		        
-         </div>
-     
-        <div class="lazyloading">
-           
-         <h2 class="header-title">Gallery</h2>
-            <hr>
-            <div class="mygallery">
-            <picture>
-                <img class="shadow" src="images/placeholder.png" data-src="images/bridge2.jpg" alt="bridge2">
-                <figcaption>Steel Bridge</figcaption>
-            </picture>
- 
-            <picture>
-                <img class="shadow" src="images/placeholder.png" data-src="images/fields.jpg" alt="fields">
-                <figcaption>Farms near the Tri cities</figcaption>
-            </picture>
-   
-            <picture>
-                <img class="shadow" src="images/placeholder.png" data-src="images/wine.jpg" alt="winefields">
-                <figcaption>Wine growing near Richland</figcaption>
-            </picture>
-         
-            <picture>
-                <img class="shadow" src="images/placeholder.png" data-src="images/bridge3.jpg" alt="another bridge">
-                <figcaption>Another bridge near Kennewick</figcaption>
-            </picture>
+          
+
     
-            <picture>
-                <img class="shadow" src="images/placeholder.png" data-src="images/bridge4.jpg" alt="yet more bridges">
-                <figcaption>Yet another bridge</figcaption>
-            </picture>
-
-            <picture>
-                <img class="shadow" src="images/placeholder.png" data-src="images/loc.jpg" alt="location">
-                <figcaption>Location</figcaption>
-            </picture>
-        </div>
-     </div>
-
-    </main>
     <footer>
         <div class="logo-footer">
             <img class="logo-footer" src="images/logo.png" alt="TriC Logo image">
