@@ -35,9 +35,9 @@
                 <ul id="primaryNav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="discover.html">Discover</a></li>
-                    <li class="active"><a href="join.html">Join</a></li>
+                    <li><a href="join.html">Join</a></li>
                     <li><a href="directory.html">Directory</a></li> 
-                    <li><a href="contact.html">Contact</a></li> 
+                    <li class="active"><a href="#">Contact</a></li> 
                 </ul>
             </nav>
         </div>
@@ -50,48 +50,22 @@
     
         <div class="herojoin">
                 <img class="bannerjoin" src="./images/bridge.jpeg" alt="bridge">
-                <h1>Join Our Chamber</h1>
-                <form method="get" action="thanks.html">
-                
+                <h1>Contact</h1>
+                <form method="get" action="#">
                     <fieldset>
                         <legend>Enter Contact Information</legend>
                         <p><i>Fields with red border are required.</i></p>
                         <label class="top">First Name: <input type="text" name="fname" required></label>
                         <label class="top">Last Name: <input type="text" name="lname" required></label>
-                        <label class="top">Business Position: <input type="text" name="position" pattern="[a-zA-Z0-9- ]{1,7}"
-                                id="businessPosition"></label>
+                        <label class="top">Organization <input type="text" name="organization" required></label>
+                        <label class="top">Title <input type="text" name="title" required></label>
+                        <label class="top">Cellphone #: <input type="tel" name="phone" required></label>
                         <label class="top">Email <input type="email" name="email" placeholder="something@somewhere.com"
                                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></label>
-                        <label class="top">Cellphone #: <input type="tel" name="phone" required></label>
-                        <label class="top">Business Name: <input type="text" name="businessName" required></label>
-                        <label class="top">Business Description: <textarea placeholder="Type here"
+                        <label class="top">Message: <textarea placeholder="Type here"
                                 name="description"></textarea></label>
                 
-                
-                        <fieldset>
-                            <legend>Choose Membership</legend>
-                            <label class="sbs"><input type="radio" name="membership" value="nonprofit"> NON-PROFIT | Free</label>
-                            <p>Unique to non-profits, expand your organizations reach by joining the Tri Cities Chamber
-                                to gain access to many of the valley's other top community-focused businesses.</p>
-                            <label class="sbs"><input type="radio" name="membership" value="bronze"> BRONZE | $300</label>
-                            <p>Get Established! Bronze memberships are recommended for businesses with 1-2 employees
-                                and are intended for startups and new businesses. Bronze membership is a great stepping
-                                stone to business success. Join to begin building name recognition and rapport with other
-                                business leaders in the community.</p>
-                            <label class="sbs"><input type="radio" name="membership" value="silver"> SILVER | $600</label>
-                            <p>Marketing & Networking! Silver Memberships are recommended for businesses with 2-5
-                                employees and are for established businesses looking to grow. This level is ideal
-                                for a business wanting to gain exposure and build community awareness. Silver membership
-                                offers all of the benefits of the Bronze level, plus additional marketing tools and benefits.
-                                Silver membership includes 4 Luncheon tickets.</p>
-                            <label class="sbs"><input type="radio" name="membership" value="gold"> GOLD | $1,000</label>
-                            <P>Business Development - Gold memberships are for established businesses working to become
-                                leaders in the Flathead Valley. Increase visibility - this level includes additional marketing
-                                opportunities. Gold membership includes 8 Luncheon tickets.</P>
-                        </fieldset>
-                
-                
-                        <input type="submit" value="Join Us!" class="submitBtn">
+                        <input type="submit" value="Send Message" class="submitBtn mt-2">
                     </fieldset>
                 </form>
                

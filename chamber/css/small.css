@@ -400,6 +400,8 @@ picture{
 }
 
 .herojoin {
+    max-width: 800px;
+    margin: 0 auto;
     position: relative;
     padding: 0; 
 }
@@ -461,4 +463,94 @@ form label.top input:required {
 }
 form label.top input:required:valid {
     border-left: green 6px solid;
+}
+
+
+/* mseriesco */
+form label.top, form label.top select {
+    margin-bottom: 5px;
+    max-width: 25rem;
+}
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 5px;
+}
+input[type="text"], input[type="email"], input[type="tel"] {
+    height: 40px;
+}
+
+.d-flex {
+    display: flex;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.column-gap-10 {
+    column-gap: 10px;;
+}
+.w-50 {
+    width: 50%;
+}
+.mt-2 {
+    margin-top: 2rem !important;
+}
+/* Weather widget */
+.weather {
+    padding: 0 !important;
+}
+.weather, .weatherwidget-io {
+    margin: 0 !important;
+}
+
+/* directory */
+.w-20 {
+    width: 20%;
+}
+.w-80 {
+    width: 80%;
+}
+.mw-1000 {
+    max-width: 1000px;
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.bg-light {
+    background-color: #DEE5E5;
+}
+.image-fluid {
+    max-width: 100%;
+}
+.directory-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+}
+.directory-grid {
+    padding: 10px 20px;
+    border-top: 5px solid #004369;
+}
+.directory-image {
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+}
+.directory-phone, .directory-address, .directory-link, .directory-anchor {
+    margin: 0;
+}
+.directory-address {
+    
+}
+.directory-anchor {
+    font-size: 16px;
+    color: #004369;
+}
+/* common */
+.page-title {
+    margin: 20px 0 0 20px;
 }

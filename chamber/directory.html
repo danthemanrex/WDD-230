@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,18 +15,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Tri-Cities Regional Chamber of Commerce</title>
 </head>
+
 <body>
-   
-    <header>    
+
+    <header>
         <div class="headname">
-           <!-- <img class="logo" src="images/logo.png" alt="tricty regional Chamber of Commerce">-->
-           <h1 class="header-title">Tri City Regional Chamber of Commerce</h1> 
+            <!-- <img class="logo" src="images/logo.png" alt="tricty regional Chamber of Commerce">-->
+            <h1 class="header-title">Tri City Regional Chamber of Commerce</h1>
         </div>
-        <div class = "social">
+        <div class="social">
             <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
             <a href="https://mobile.twitter.com/" target="_blank"><img src="images/twitter.png" alt="twitter"></a>
-            </div>
-        
+        </div>
+
         <div>
             <button id="hamburguerBtn"><span>&#9776;</span><span>X</span></button>
         </div>
@@ -35,63 +36,71 @@
                 <ul id="primaryNav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="discover.html">Discover</a></li>
-                    <li ><a href="join.html">Join</a></li>
-                    <li class="active"><a href="directory.html">Directory</a></li> 
-                    <li><a href="#">Contact</a></li> 
+                    <li><a href="join.html">Join</a></li>
+                    <li class="active"><a href="directory.html">Directory</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
         <div class="date-header">
             <p id="datetime"></p>
         </div>
-        
-              
+
+
     </header>
-    <main class="directoryPage">
-        <h2 class="dirHeading">Directory</h2>
-        <div class="links">
+    <div class="herojoin">
+        <img class="bannerjoin" src="./images/bridge.jpeg" alt="bridge">
+        <h1 class="page-title">Directory</h1>
+    </div>
+    <div class="directory-container mx-auto mt-2 column-gap-10">
+        <div class="directory-menu bg-light links">
             <ul>
                 <li class="grid active" data-view="grid-view">
-                <span class="material-icons-outlined">
-                grid_view</span></li>
+                    <span class="material-icons-outlined">
+                        Grid View</span>
+                </li>
 
                 <li class="list" data-view="list-view">
-                <span class="material-icons-outlined">
-                format_list_bulleted</span></li>
+                    <span class="material-icons-outlined">
+                        List View</span>
+                </li>
             </ul>
         </div>
-        <div class="views">
-            <div class="view-div grid-view" style="display: grid;"></div>
-            <div class="view-div list-view" style="display: none;"></div>
-        </div>
-    </main>
-    
-
-        <footer>
+        <div class="directory-content bg-light grid-div" id="grid-div" style="display: block;"></div>
+        <div class="directory-content bg-light grid-div" id="list-div" style="display: none;"></div>
+    </div>
+    <footer>
         <div class="logo-footer">
             <img class="logo-footer" src="images/logo.png" alt="TriC Logo image">
-                </div>
-                <div class="title-footer">
-                    
-                </div>
-                <div class="contact">
-                    <p>info@tricityregionalchamber.com</p>
-                    <p>(509) 736-0510</p>
-                    <p>7130 W Grandridge Blvd., Suite C, Kennewick, WA 99336 USA</p>
-                    <p> <href="https://www.openstreetmap.org/way/855677254#map=18/46.21822/-119.21540">Map Location</p>
-                    <br><br>
-                    </div>
-                <div class="info">  
-                        <span>  &nbsp; &nbsp; &copy;<span id="©">
-                        </span>&nbsp; Tri-Cities Regional Chamber of Commerce &nbsp;</span> |  &nbsp; Dan Harris &nbsp; |  &nbsp; WDD 230 Project &nbsp;|  &nbsp; <span id="output"></span>
-                </div>            
-            </footer>
-            <script src="js/script.js"></script>
-            <script src="js/lastModifiedDate.js"></script>
-            <script src="js/time.js"></script>
-            <script src="js/imagehandling.js"></script>
-            <script src="js/webfontload.js"></script>
-            <script src="js/localstorage.js"></script>
-            <script src="js/directory.js"></script>
-        </body>
-        </html>
+        </div>
+        <div class="title-footer">
+
+        </div>
+        <div class="contact">
+            <p>info@tricityregionalchamber.com</p>
+            <p>(509) 736-0510</p>
+            <p>7130 W Grandridge Blvd., Suite C, Kennewick, WA 99336 USA</p>
+            <p>
+                <href="https: //www.openstreetmap.org/way/855677254#map=18/46.21822/-119.21540">Map Location
+            </p>
+            <br><br>
+        </div>
+        <div class="info">
+            <span> &nbsp; &nbsp; &copy;<span id="©">
+                </span>&nbsp; Tri-Cities Regional Chamber of Commerce &nbsp;</span> | &nbsp; Dan Harris &nbsp; | &nbsp;
+            WDD 230 Project &nbsp;| &nbsp; <span id="output"></span>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+    <script src="js/lastModifiedDate.js"></script>
+    <script src="js/time.js"></script>
+    <script src="js/imagehandling.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/localstorage.js"></script>
+    <script src="js/directory.js"></script>
+</body>
+
+</html>

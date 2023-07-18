@@ -2,6 +2,7 @@
 const dataURL = 'https://danthemanrex.github.io/wdd230/chamber/js/data.json';
 const listDiv = document.querySelector('.list-view');
 const cardDiv = document.querySelector('.grid-view');
+const gridDiv = document.querySelector('.grid-div');
 
 fetch(dataURL)
     .then((response) => {
@@ -11,9 +12,36 @@ fetch(dataURL)
         console.table(jsonObject);
 
         const businesses = jsonObject['businesses'];
-        businesses.forEach(displayBusinessesInGrid);
-        businesses.forEach(displayBusinessesInList);
+        businesses.forEach(appendGridView);
+        businesses.forEach(appendListView);
     });
+
+    function appendGridView(business) {
+        let directoryGrid = `
+            <section class="directory-grid">
+                <img class="image-fluid directory-image" src="${business.images}"
+                    alt="Image of ${business.name}" loading="lazy">
+                <h2>${business.name}</h2>
+                <hr>
+                <p class="directory-phone">${business.phone}</p>
+                <p class="directory-address">${business.address}</p>
+                <p class="directory-link"><a class="directory-anchor" href="${business.website}">${business.website}</a></p>
+            </section>
+        `;
+        $("#grid-div").append(directoryGrid);
+    }
+    function appendListView(business) {
+        let directoryList = `
+            <section class="directory-grid">
+                <h2>${business.name}</h2>
+                <hr>
+                <p class="directory-phone">${business.phone}</p>
+                <p class="directory-address">${business.address}</p>
+                <p class="directory-link"><a class="directory-anchor" href="${business.website}">${business.website}</a></p>
+            </section>
+        `;
+        $("#list-div").append(directoryList);
+    }
 
     function displayBusinessesInGrid(business) {
 
@@ -42,7 +70,21 @@ fetch(dataURL)
         media_card.appendChild(address);
         media_card.appendChild(website);
             
-        cardDiv.appendChild(media_card);
+        // cardDiv.appendChild(media_card);
+
+        // mseriesco
+        let directoryGrid = `
+            <section class="directory-grid">
+                <img class="image-fluid directory-image" src="${business.images}"
+                    alt="Image of ${business.name}" loading="lazy">
+                <h2>${business.name}</h2>
+                <hr>
+                <p class="directory-phone">${business.phone}</p>
+                <p class="directory-address">${business.address}</p>
+                <p class="directory-link"><a class="directory-anchor" href="${business.website}">${business.website}</a></p>
+            </section>
+        `;
+        cardDiv.appendChild(directoryGrid);
     }
 
     function displayBusinessesInList(business) {
@@ -85,9 +127,11 @@ viewsButtons.forEach((link) => {
         })
         
         if (li_view == 'grid-view') {
-            document.querySelector('.' + li_view).style.display = 'grid';
+            $("#grid-div").css("display", "block");
+            $("#list-div").css("display", "none");
         } else {
-            document.querySelector('.' + li_view).style.display = 'block';
+            $("#grid-div").css("display", "none");
+            $("#list-div").css("display", "block");
         }
     })
 
