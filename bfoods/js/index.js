@@ -19,7 +19,7 @@ fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`)
             <div class="temp_img">
                 <img src="${weatherIconURL}" alt="Weather Icon">
             </div>
-            <h4>${currentTemperature}Â°C</h4>
+            <h4>${currentTemperature}°C</h4>
         </div>
         <div class="weather_insider">
             <p>Humidity: ${humidity}%</p>
@@ -55,7 +55,7 @@ const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
             <div class="temp_img">
                 <img src="${weatherIconURL}" alt="Weather Icon">
             </div>
-            <h4>${temperature}Â°C</h4>
+            <h4>${temperature}°C</h4>
         </div>
         `;
 
