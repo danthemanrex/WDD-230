@@ -1,0 +1,68 @@
+$primary:#f97431;
+$secondary:#654afc;
+$font:#3c3321;
+$white:rgba(255,255,255,1);
+$border:#E9EAEE;
+$bg:#f3ffff;
+$black:rgba(0,0,0,1);
+$gradiunt: linear-gradient(to right, $primary , #ffae00);
+$gradiunttwo: linear-gradient(to right, #4929ff , #912efb);
+$transition: all 0.2s ease-in-out;
+$transition-two: all 0.5s ease-in-out;
+$shadow:drop-shadow(0 2px 4px rgba(0, 0, 0, 0));
+$shadow-two: 0px 1px 10px 0px rgba(45, 19, 106, 0.1);
+$shadow-three:0px 0px 8px 2px rgba(45, 19, 106, 0.2);
+
+$open:'Open Sans', sans-serif;
+$roboto:'Roboto', sans-serif;
+
+@mixin before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+@mixin button{
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: $white;
+    background: $gradiunt;
+    position: relative;
+    z-index: 5;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0));
+    overflow: hidden;
+    &::before{
+      @include before;
+      background: $gradiunt;
+      transform: translate(0%, 0);
+      transition: $transition;
+      transition: $transition;
+      z-index: -1;
+    }
+    &::after{
+        @include before;
+        background: $gradiunt;
+        transform: translate(100%, 0) rotate(180deg);
+        transition: $transition;
+        transition: $transition;
+        z-index: -1;
+      }
+    &:hover{
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+      transition: $transition;
+      &::before{
+        transform: translate(-100%, 0);
+        transition: $transition;
+      }
+      &::after{
+        transform: translate(0%, 0)  rotate(180deg);
+        transition: $transition;
+      }
+    }
+    
+}
