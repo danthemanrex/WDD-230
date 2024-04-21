@@ -1,6 +1,6 @@
 # wdd230
 
-This is my repo for WDD 230
+This is my repo for BYUI WDD 230
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus, nisl vel feugiat iaculis, ligula est dictum tellus, id suscipit urna nulla eu mi. Fusce luctus magna eros, aliquam luctus sapien hendrerit at. Nam magna ligula, vulputate sit amet tortor ut, imperdiet gravida nulla. Etiam et nisl lectus. Cras vestibulum urna vel vehicula dictum. In hac habitasse platea dictumst. Suspendisse eget vulputate enim. Etiam faucibus sodales magna quis posuere. Fusce dictum, nisi et volutpat suscipit, lacus neque cursus metus, ut lacinia sem odio sed felis. Nunc semper tincidunt sapien at pellentesque. Pellentesque interdum arcu sapien, iaculis viverra lacus sagittis quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas, risus at pulvinar pulvinar, augue lacus tempus ipsum, id pretium diam leo id lectus. Nam quis lacus eleifend mi pulvinar sollicitudin. Aliquam nisi purus, rutrum et turpis quis, suscipit volutpat erat.
 
